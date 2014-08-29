@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>I FILM</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+ </head>
+
+<body>
+	<div class="top">
+    	<div class="top_left">
+			<img src="images/I film.png" style="width:150px; height:26px;" />
+        </div>    
+        <div class="top_right_w">
+            <div class="top_right">
+                <a href="###" ><img  class="right1" src="images/title1.png" /></a>
+                <a href="###" ><img  class="right2" src="images/title2.png" /></a>
+                <a href="###" ><img  class="right3" src="images/title3.png" /></a>
+                <a href="###" ><img  class="right4" src="images/title4.png" /></a>	
+            </div>
+        </div> 
+    </div>
+    <div class="container">
+        <div class="menu">
+            <img src="images/menu_logo.png" class="menu_logo" />
+            <div class="search">
+                <input type="text" name="text"  class="search_text"/>
+                <input type="image" name="button" src="images/search_button.png"  class="button"/>
+            </div>
+            <div class="menu_w">
+                <ul class="menu_list">
+                    <div class="menu_a">
+                        <div class="menu_main_a">
+                            <li>
+                            <a href="###" class="list_a">首页</a>
+                                <ul class="nav">
+                                    <li><img src="images/list_s.png" /></li>
+                                    <li><a href="###">热映大片</a></li>
+                                    <li><a href="###">即将上映</a></li>
+                                    <li><a href="###">评分最高</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="menu_b">
+                        <div class="menu_main_b">
+                            <li>
+                            <a href="###" class="list_b">热映大片</a>
+                                <ul class="nav">
+                                    <li><img src="images/list_s.png" /></li>
+                                    <li><a href="###">欧美</a></li>
+                                    <li><a href="###">大陆</a></li>
+                                    <li><a href="###">港台</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="menu_c">    
+                        <div class="menu_main_c">
+                            <li >
+                            <a href="###" class="list_c">即将上映</a>
+                                <ul class="nav">
+                                    <li><img src="images/list_s.png" /></li>
+                                    <li><a href="###">欧美</a></li>
+                                    <li><a href="###">大陆</a></li>
+                                    <li><a href="###">港台</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="menu_d">
+                        <div class="menu_main_d">
+                        <li><a href="###" class="list_d">评分最高</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+    </div>
+<div class="fullSlide">
+  <div class="bd">
+    <ul>
+      <li _src="url(images/1.jpg)" style="background:#E2025E center 0 no-repeat;"><a target="_blank" href="http://www.zztuku.com"></a></li>
+      <li _src="url(images/2.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a target="_blank" href="http://www.zztuku.com"></a></li>
+      <li _src="url(images/3.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a target="_blank" href="http://www.zztuku.com"></a></li>
+      <li _src="url(images/4.jpg)" style="background:#98918E center 0 no-repeat;"><a target="_blank" href="http://www.zztuku.com"></a></li>
+      <!--<li _src="url(images/5.jpg)" style="background:#FEFF19 center 0 no-repeat;"><a target="_blank" href="http://www.zztuku.com"></a></li>-->
+    </ul>
+  </div>
+  <div class="hd">
+    <ul>
+    </ul>
+</div>
+  <!--<span class="prev"></span> <span class="next"></span> --></div>
+  <script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script> 
+   
+   
+    <div class="sub_menu">
+    	<div class="sub_w">
+            <div class="sub1">
+                <div class="subtitle">	       
+                    <a href="###" class="subtitle_a">热映大片</a>
+                </div>
+                <div class="subcontent">
+                    <a  href="###" class="subpic"><img src="images/sub1.jpg" style="width:150px; height:200px; border:none" /></a>
+                    <div class="film">
+                                <a href="###" class="film_link">白发魔女传之明月天国</a>
+                                <a href="###" class="film_link">敢死队3</a>
+                                <a href="###" class="film_link">暴力街区</a>
+                                <a href="###" class="film_link">小时代3：刺金时代</a>
+                   </div>             
+                                <div class="clear"></div>
+                                <div class="more"><a href="###"><img src="images/more.png" style="width:100px; height:20px; border:none" /></a></div>
+
+                 </div>    
+            </div>
+            <div class="sub2">
+                <div class="subtitle">	       
+                    <a href="###"  class="subtitle_a">即将上映</a>
+                </div>
+                <div class="subcontent">
+                     <a  href="###" class="subpic"><img src="images/sub2.jpg" style="width:150px; height:200px; border:none" /></a>
+                      <div class="film">
+                                <a href="###" class="film_link">驯龙高手2</a>
+                                <a href="###" class="film_link">绣春刀</a>
+                                <a href="###" class="film_link">冬荫功2之拳霸天下</a>
+                                <a href="###" class="film_link">庞贝末日</a>
+                      </div>          
+                                <div class="clear"></div>
+                                <div class="more"><a href="###"><img src="images/more.png" style="width:100px; height:20px; border:none" /></a></div>
+                     
+                 </div>    
+            </div>
+            <div class="sub3">
+                <div class="subtitle">	       
+                    <a href="###" class="subtitle_a">评分最高</a> 
+                </div>
+                <div class="subcontent">
+                    <a  href="###" class="subpic"><img src="images/sub3.jpg" style="width:150px; height:200px; border:none" /></a>
+                       <div class="film">
+                                <a href="###" class="film_link">霸王别姬</a>
+                                <a href="###" class="film_link">搏击俱乐部</a>
+                                <a href="###" class="film_link">肖申克的救赎</a>
+                                <a href="###" class="film_link">忠犬八公</a>
+                       </div>         
+                                <div class="clear"></div>
+                                <div class="more"><a href="###"><img src="images/more.png" style="width:100px; height:20px; border:none" /></a></div>
+                     
+               </div>    
+        	</div>
+    	</div>
+    </div>
+    <div class="foot">
+        <div class="footlogo">
+           <a href="###"><img src="images/foot_logo.png" style="width:200px; height:40px; border:none;" /></a>
+        </div>   
+   		
+   
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
